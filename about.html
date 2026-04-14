@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Moses Compliance | Global Regulatory Compliance</title>
+<meta name="description" content="Moses Compliance is a global regulatory compliance firm protecting importers, exporters, and Amazon sellers from enforcement actions worldwide.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iIzA2MGYxZSIvPgogIDxwb2x5Z29uIHBvaW50cz0iMzIsNCA1OCwxNiA1OCw0MCAzMiw2MCA2LDQwIDYsMTYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2M5YTg0YyIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPHBvbHlnb24gcG9pbnRzPSIzMiwxMCA1MiwyMCA1MiwzOCAzMiw1NCAxMiwzOCAxMiwyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYzlhODRjIiBzdHJva2Utd2lkdGg9IjEiIG9wYWNpdHk9IjAuNCIvPgogIDx0ZXh0IHg9IjMyIiB5PSI0MiIgZm9udC1mYW1pbHk9InNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2M5YTg0YyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TTwvdGV4dD4KICA8cmVjdCB4PSI2IiB5PSI2MCIgd2lkdGg9IjUyIiBoZWlnaHQ9IjMiIHJ4PSIxIiBmaWxsPSIjYzlhODRjIi8+Cjwvc3ZnPg==">
+<link rel="stylesheet" href="shared.css">
+<style>
+/* ── ABOUT: UNIQUE HORIZONTAL LINES BACKGROUND ── */
+.about-hero {
+  position: relative; padding: 160px 60px 100px; overflow: hidden;
+  background: var(--ink); border-bottom: 1px solid var(--line);
+}
+.about-hero-lines {
+  position: absolute; inset: 0; z-index: 0; overflow: hidden;
+}
+.about-hero-lines::before {
+  content: '';
+  position: absolute; left: -10%; right: -10%; top: 0; bottom: 0;
+  background: repeating-linear-gradient(
+    -12deg,
+    transparent,
+    transparent 48px,
+    rgba(201,168,76,0.025) 48px,
+    rgba(201,168,76,0.025) 49px
+  );
+  animation: linesDrift 20s linear infinite;
+}
+@keyframes linesDrift { from{transform:translateX(0);} to{transform:translateX(60px);} }
+.about-hero-glow {
+  position: absolute; inset: 0; z-index: 0;
+  background: radial-gradient(ellipse 70% 60% at 30% 50%, rgba(201,168,76,0.05) 0%, transparent 65%),
+              radial-gradient(ellipse 40% 40% at 85% 20%, rgba(15,30,65,0.4) 0%, transparent 60%);
+}
+/* Large decorative M */
+.about-hero-letter {
+  position: absolute; right: 80px; top: 50%; transform: translateY(-50%);
+  font-family: 'Bebas Neue', sans-serif; font-size: 28vw; line-height: 1;
+  color: rgba(201,168,76,0.03); z-index: 0; pointer-events: none;
+  user-select: none; letter-spacing: -5px;
+}
+.about-hero-content { position: relative; z-index: 1; max-width: 760px; }
+.about-eyebrow {
+  display: flex; align-items: center; gap: 14px;
+  font-size: 0.6rem; letter-spacing: 5px; color: var(--gold);
+  text-transform: uppercase; margin-bottom: 24px; font-weight: 500;
+  opacity: 0; animation: aFadeUp 0.8s cubic-bezier(0.16,1,0.3,1) forwards 0.15s;
+}
+.about-eyebrow::before { content: ''; width: 30px; height: 1px; background: var(--gold); }
+.about-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3rem, 6vw, 6.5rem);
+  font-weight: 400; line-height: 0.96; margin-bottom: 28px;
+  opacity: 0; animation: aFadeUp 0.8s cubic-bezier(0.16,1,0.3,1) forwards 0.3s;
+}
+.about-title em { font-style: italic; color: var(--gold); }
+.about-title span { display: block; }
+.about-lead {
+  font-size: 1.08rem; color: var(--ash); line-height: 1.95;
+  max-width: 620px; margin-bottom: 44px;
+  opacity: 0; animation: aFadeUp 0.8s cubic-bezier(0.16,1,0.3,1) forwards 0.45s;
+}
+@keyframes aFadeUp { from{opacity:0;transform:translateY(20px);} to{opacity:1;transform:translateY(0);} }
+
+/* Content sections */
+.csec { padding: 90px 60px; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; max-width: 1140px; margin: 0 auto; }
+
+.content-block h2 {
+  font-family: 'Playfair Display', serif; font-size: clamp(1.7rem,2.5vw,2.6rem);
+  font-weight: 400; line-height: 1.15; margin-bottom: 22px;
+}
+.content-block h2 em { font-style: italic; color: var(--gold); }
+.content-block p { font-size: 0.92rem; color: var(--ash); line-height: 1.95; margin-bottom: 18px; }
+.content-block p strong { color: var(--cream); font-weight: 500; }
+
+/* Values grid */
+.value-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 3px; margin: 60px 0; }
+.value-card {
+  background: var(--ink2); padding: 42px 30px;
+  border-top: 2px solid var(--gold); position: relative; overflow: hidden;
+  transition: background 0.35s;
+}
+.value-card::before {
+  content: attr(data-num);
+  position: absolute; right: 20px; bottom: 16px;
+  font-family: 'Bebas Neue', sans-serif; font-size: 5rem; color: rgba(201,168,76,0.05);
+  line-height: 1; pointer-events: none;
+}
+.value-card:hover { background: var(--ink3); }
+.value-title { font-size: 0.58rem; letter-spacing: 3.5px; color: var(--gold); text-transform: uppercase; margin-bottom: 13px; font-weight: 500; }
+.value-desc { font-size: 0.86rem; color: var(--ash); line-height: 1.9; }
+
+/* Service detail blocks */
+.service-detail {
+  background: var(--ink2); padding: 44px;
+  margin-bottom: 3px; border-left: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+.service-detail:hover { border-left-color: var(--gold); }
+.service-detail h3 { font-family: 'Playfair Display', serif; font-size: 1.45rem; font-weight: 500; margin-bottom: 13px; color: var(--cream); }
+.service-detail p { font-size: 0.88rem; color: var(--ash); line-height: 1.95; }
+.service-tag { font-size: 0.52rem; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 9px; font-weight: 500; }
+
+/* CTA band */
+.cta-band {
+  padding: 80px 60px; text-align: center;
+  background: var(--ink2); border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  position: relative; overflow: hidden;
+}
+.cta-band::before {
+  content: '';
+  position: absolute; inset: 0; z-index: 0;
+  background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(201,168,76,0.04) 0%, transparent 70%);
+}
+.cta-band > * { position: relative; z-index: 1; }
+.cta-band h2 { font-family: 'Playfair Display', serif; font-size: clamp(2rem,3.5vw,3.2rem); font-weight: 400; margin-bottom: 18px; }
+.cta-band h2 em { font-style: italic; color: var(--gold); }
+.cta-band p { font-size: 0.92rem; color: var(--ash); margin-bottom: 32px; }
+
+@media(max-width:768px) {
+  .about-hero { padding: 96px 18px 56px; }
+  .about-hero-letter { display: none; }
+  .about-title { font-size: clamp(2.5rem,10vw,3.8rem); }
+  .about-lead { font-size: 0.96rem; }
+  .csec { padding: 56px 18px; }
+  .two-col { grid-template-columns: 1fr; gap: 44px; }
+  .value-grid { grid-template-columns: 1fr; margin: 36px 0; }
+  .service-detail { padding: 28px 20px; }
+  .cta-band { padding: 56px 18px; }
+  footer { padding: 50px 18px 30px; }
+}
+@media(min-width:769px) and (max-width:1100px) {
+  .about-hero { padding: 110px 30px 70px; }
+  .csec { padding: 70px 30px; }
+  .two-col { gap: 44px; }
+  .value-grid { grid-template-columns: 1fr; }
+  .about-hero-letter { font-size: 20vw; right: 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">Moses<span>Compliance</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#markets">Markets</a></li>
+    <li><a href="index.html#why">Why Us</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="index.html#contact-form">Contact</a></li>
+  </ul>
+  <a href="index.html#contact-form" class="nav-cta">Get Help Now</a>
+  <div class="nav-hamburger" id="hamburger" onclick="toggleMobile()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#services" onclick="closeMobile()">Services</a>
+  <a href="index.html#markets" onclick="closeMobile()">Markets</a>
+  <a href="index.html#why" onclick="closeMobile()">Why Us</a>
+  <a href="about.html" class="active" onclick="closeMobile()">About</a>
+  <a href="index.html#contact-form" onclick="closeMobile()">Contact</a>
+  <a href="index.html#contact-form" class="nav-cta" onclick="closeMobile()">Get Help Now</a>
+</div>
+
+<!-- HERO -->
+<section class="about-hero">
+  <div class="about-hero-lines"></div>
+  <div class="about-hero-glow"></div>
+  <div class="about-hero-letter">M</div>
+  <div class="about-hero-content">
+    <div class="about-eyebrow">About Moses Compliance</div>
+    <h1 class="about-title">
+      <span>Global Regulatory</span>
+      <em>Intelligence.</em>
+      <span style="font-family:'Bebas Neue',sans-serif;font-size:0.7em;letter-spacing:4px;color:var(--cream);opacity:0.8;">One Firm.</span>
+    </h1>
+    <p class="about-lead">Moses Compliance is a specialist global regulatory compliance firm protecting importers, exporters, and Amazon sellers from enforcement actions across the United States, European Union, United Kingdom, Canada, and Australia. We are not a law firm. We are not a template service. We are the specialist who was already watching when your violation happened.</p>
+  </div>
+</section>
+
+<div class="dv"></div>
+
+<!-- WHAT WE DO -->
+<section class="csec">
+  <div class="two-col">
+    <div class="content-block rv-l">
+      <h2>What We <em>Actually Do</em></h2>
+      <p>When a company receives an FDA import refusal, a Prop 65 60-day notice, an EU Safety Gate listing, or an Amazon compliance action — the clock starts immediately. Most businesses do not know what to do. Their customs broker handles the logistics side. Their lawyer handles the legal side. But the technical compliance gap — the documentation, the lab testing, the corrective action evidence, the regulatory filings — is where companies lose.</p>
+      <p>Moses Compliance fills that gap. We prepare the technical documentation your legal team needs to defend you. We coordinate with accredited laboratories. We manage the regulatory correspondence. We work alongside your existing counsel and logistics providers — completing the picture, not replacing it.</p>
+      <p><strong>We monitor FDA refusal reports, CPSC recalls, Prop 65 filings, EU Safety Gate notifications, and Amazon enforcement actions daily.</strong> We identify violations the moment they happen. We reach out to affected businesses before they have had time to panic.</p>
+    </div>
+    <div class="content-block rv-r">
+      <h2>The <em>Compliance Gap</em> Nobody Fills</h2>
+      <p>There is a gap between what lawyers handle and what logistics providers handle. A Prop 65 notice requires legal defense — and it also requires safe harbor threshold testing, exposure assessment documentation, and warning label compliance. Your attorney handles the courtroom. Moses Compliance handles the laboratory.</p>
+      <p>An FDA import refusal requires a customs entry response — and it also requires a formal admissibility package, corrected labeling documentation, and correspondence with the FDA District Office. Your customs broker handles CBP. Moses Compliance handles FDA.</p>
+      <p>An EU Safety Gate listing requires market withdrawal — and it also requires a corrective action defense, EU Responsible Person representation, and Amazon EU reinstatement documentation. Nobody else covers all three simultaneously. <strong>Moses Compliance does.</strong></p>
+    </div>
+  </div>
+</section>
+
+<div class="dv"></div>
+
+<!-- VALUES -->
+<section class="csec sec-alt">
+  <div style="max-width:1140px;margin:0 auto;">
+    <div class="ey rv">Our Approach</div>
+    <h2 class="st rv" style="margin-bottom:0;">Three things that make us <em>different</em></h2>
+    <div class="value-grid">
+      <div class="value-card rv" data-num="01">
+        <div class="value-title">Proactive Intelligence</div>
+        <p class="value-desc">We do not wait for clients to find us. We monitor every major enforcement portal daily — FDA, CPSC, Prop 65, EU Safety Gate, ACCC, Health Canada. We identify distressed businesses before they know they need help and reach out during the narrow window where the cost of resolution is lowest.</p>
+      </div>
+      <div class="value-card rv" data-delay="1" data-num="02">
+        <div class="value-title">Technical Not Theoretical</div>
+        <p class="value-desc">Every engagement produces real deliverables. Corrected labels. Accredited lab reports. Plans of Action. Regulatory filings. Responsible Person designations. Not advice. Not recommendations. Actual documentation that resolves the problem. We work with ISO 17025 accredited laboratories and CPSC-accepted test houses directly.</p>
+      </div>
+      <div class="value-card rv" data-delay="2" data-num="03">
+        <div class="value-title">One Firm — Every Jurisdiction</div>
+        <p class="value-desc">US federal enforcement. EU product safety. UK regulations. Canadian Health standards. Australian ACCC. Amazon platform compliance. Most compliance firms specialize in one jurisdiction. Moses Compliance covers all of them simultaneously — so a company facing a multi-country enforcement cascade has one point of contact, not five.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="dv"></div>
+
+<!-- SERVICE DETAILS -->
+<section class="csec">
+  <div style="max-width:1140px;margin:0 auto;">
+    <div class="ey rv">Service Details</div>
+    <h2 class="st rv" style="margin-bottom:40px;">What each engagement <em>includes</em></h2>
+
+    <div class="service-detail rv">
+      <div class="service-tag">Prop 65 Defense</div>
+      <h3>California Prop 65 — Notice Response &amp; Post-Settlement Compliance</h3>
+      <p>For companies that have received a 60-day Prop 65 notice: Moses Compliance prepares the technical compliance layer that runs alongside your legal defense — safe harbor threshold testing through accredited California-recognized laboratories, exposure assessment documentation, warning label design and implementation, and corrective action evidence package for your attorney. For companies that have already settled: our post-settlement compliance audit reviews your full catalog against Prop 65 standards, identifies remaining exposure, implements warning compliance across all sales channels, and builds the documentation system that prevents follow-on notices. Post-settlement audits start at $500 per SKU.</p>
+    </div>
+
+    <div class="service-detail rv">
+      <div class="service-tag">FDA Import Refusals</div>
+      <h3>FDA Refusal Response — Admissibility Package &amp; Import Alert Prevention</h3>
+      <p>When FDA refuses a shipment your customs broker handles the CBP entry side. Moses Compliance handles the FDA side — the admissibility response, corrected labeling to meet 21 CFR requirements, reconditioning applications, private laboratory analysis coordination using US-based accredited facilities, and formal correspondence to the FDA District Office. We work alongside your customs broker so both sides of the refusal are covered simultaneously. For companies on FDA Import Alert: full Import Alert removal package including the required laboratory analysis and compliance documentation.</p>
+    </div>
+
+    <div class="service-detail rv">
+      <div class="service-tag">EU Safety Gate</div>
+      <h3>EU Safety Gate Defense — GPSR Compliance &amp; Amazon EU Reinstatement</h3>
+      <p>EU Safety Gate listings trigger mandatory withdrawal across all 27 EU member states. Moses Compliance prepares the complete corrective action defense, coordinates with EU-based accredited laboratories for chemical and electrical safety testing, provides EU Responsible Person representation under GPSR 2023/988, and prepares the Amazon EU reinstatement documentation simultaneously. For multi-country cascade situations — listings appearing in two or more member states — we coordinate a unified response across all notifying authorities in one engagement. UK Responsible Person services available simultaneously for companies selling in both EU and UK markets.</p>
+    </div>
+
+    <div class="service-detail rv">
+      <div class="service-tag">Lab Coordination</div>
+      <h3>Accredited Laboratory Coordination — Safe Harbor Testing &amp; Product Certification</h3>
+      <p>Moses Compliance manages the entire laboratory process on your behalf — we do not simply recommend a lab and leave you to manage it. We identify the correct ISO 17025 accredited facility for your specific product and chemical profile, prepare and submit samples, manage the testing timeline, review results against regulatory thresholds, and incorporate findings into your compliance documentation package. For Prop 65 safe harbor testing: lead, phthalates, cadmium, and other listed chemicals. For CPSC certification: ASTM F963, 16 CFR, and other applicable standards. For EU testing: EN standards and REACH chemical compliance. Lab coordination fee separate from laboratory costs.</p>
+    </div>
+
+    <div class="service-detail rv">
+      <div class="service-tag">Ongoing Program</div>
+      <h3>Ongoing Regulatory Compliance Program — Monthly Monitoring &amp; Catalog Protection</h3>
+      <p>For companies that want continuous protection rather than reactive crisis management. Monthly monitoring across Prop 65, CPSC, FDA, EU Safety Gate, and Amazon enforcement channels. Immediate alert when your brand or product category is flagged. Quarterly compliance audit of your product catalog against current standards. Warning label review and update as regulations change. Supplier documentation system maintenance. Ongoing Amazon listing compliance monitoring. Retainer programs start at $400 per month for small catalogs. This is the service that ensures a Prop 65 settlement never leads to a second Prop 65 settlement.</p>
+    </div>
+  </div>
+</section>
+
+<div class="dv"></div>
+
+<!-- CTA BAND -->
+<div class="cta-band rv">
+  <h2>The Clock Is <em>Already Running</em></h2>
+  <p>Whether you received a notice today or want to prevent one — reach out now.</p>
+  <a href="index.html#contact-form" class="btn-gold">Contact Moses Compliance</a>
+</div>
+
+<footer>
+  <div class="ft-in">
+    <div class="ft-brand">
+      <div class="ft-brand-logo">Moses Compliance</div>
+      <div class="ft-brand-sub">&#20840;&#29699;&#27861;&#35268;&#21512;&#35757;</div>
+      <p>Global regulatory compliance firm protecting importers, exporters, and Amazon sellers worldwide.</p>
+    </div>
+    <div class="ft-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="fda-import-refusal.html">FDA Import Refusals</a></li>
+        <li><a href="prop-65.html">Prop 65 Defense</a></li>
+        <li><a href="cpsc-compliance.html">CPSC Compliance</a></li>
+        <li><a href="fcc-authorization.html">FCC Authorization</a></li>
+        <li><a href="eu-gpsr.html">EU GPSR &amp; CBAM</a></li>
+        <li><a href="amazon-compliance.html">Amazon Compliance</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h4>Contact</h4>
+      <ul>
+        <li style="color:var(--ash2)">compliancemoses [at] gmail.com</li>
+        <li><a href="index.html#contact-form" style="color:var(--gold)">Submit a Case &rarr;</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bot">
+    <p>&copy; 2025 Moses Compliance &middot; Global Regulatory Compliance &middot; compliancemoses.github.io</p>
+    <p class="ft-cn2">&#20840;&#29699;&#27861;&#35268;&#21512;&#35757;</p>
+    <p>FDA &middot; Prop 65 &middot; CPSC &middot; FCC &middot; EU GPSR &middot; Lab Coordination</p>
+  </div>
+</footer>
+
+<script>
+function toggleMobile() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+function closeMobile() {
+  document.getElementById('mobileMenu').classList.remove('open');
+}
+var obs = new IntersectionObserver(function(es) {
+  es.forEach(function(e) {
+    if (e.isIntersecting) { e.target.classList.add('on'); obs.unobserve(e.target); }
+  });
+}, { threshold: 0.06, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.rv,.rv-l,.rv-r').forEach(function(el) { obs.observe(el); });
+</script>
+</body>
+</html>
